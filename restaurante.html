@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonda La Palma — Carta del Día</title>
+    <style>
+        /* Estilos base con estética de carta impresa en papel */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #faf9f6;
+            color: #2c2825;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        /* Hoja central de la carta */
+        .carta {
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #d8d2c7;
+            padding: 40px 36px;
+        }
+
+        /* Encabezado sencillo */
+        header {
+            text-align: center;
+            border-bottom: 1px solid #d8d2c7;
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        header h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+            color: #1f1c1a;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            font-family: Georgia, "Times New Roman", serif;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #6b635b;
+        }
+
+        /* Navegación interna discreta */
+        nav {
+            margin-top: 18px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #4a443e;
+            text-decoration: none;
+            margin: 0 12px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover {
+            border-bottom: 1px solid #4a443e;
+        }
+
+        /* Secciones del menú */
+        section {
+            margin-bottom: 42px;
+        }
+
+        section h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.45rem;
+            font-weight: normal;
+            color: #1f1c1a;
+            border-bottom: 1px solid #e5dfd5;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+        }
+
+        /* Fotografía integrada de forma natural en cada sección */
+        .foto-seccion {
+            margin-bottom: 22px;
+        }
+
+        .foto-seccion img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #d8d2c7;
+            background-color: #f2efe9;
+        }
+
+        .foto-seccion figcaption {
+            font-family: Georgia, "Times New Roman", serif;
+            font-style: italic;
+            font-size: 0.82rem;
+            color: #787067;
+            margin-top: 6px;
+            text-align: right;
+        }
+
+        /* Listado de platillos sin precios */
+        .lista-menu {
+            list-style: none;
+        }
+
+        .platillo {
+            padding: 12px 0;
+            border-bottom: 1px dotted #dcd6cc;
+        }
+
+        .platillo:last-child {
+            border-bottom: none;
+        }
+
+        .platillo h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.08rem;
+            font-weight: bold;
+            color: #2c2825;
+            margin-bottom: 4px;
+        }
+
+        .platillo p {
+            font-size: 0.92rem;
+            color: #59524b;
+        }
+
+        /* Pie de página */
+        footer {
+            border-top: 1px solid #d8d2c7;
+            padding-top: 22px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b635b;
+        }
+
+        footer p {
+            margin-bottom: 4px;
+        }
+
+        /* Ajustes responsivos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px 8px;
+            }
+
+            .carta {
+                padding: 26px 20px;
+            }
+
+            header h1 {
+                font-size: 1.65rem;
+            }
+
+            .foto-seccion img {
+                height: 185px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="carta">
+        <!-- Encabezado de la carta -->
+        <header>
+            <h1>Fonda La Palma</h1>
+            <p>Cocina mexicana casera · Recetas de todos los días</p>
+            <nav aria-label="Secciones de la carta">
+                <a href="#comidas">Comidas</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#postres">Postres</a>
+            </nav>
+        </header>
+
+        <!-- ==================== SECCIÓN DE COMIDAS ==================== -->
+        <section id="comidas">
+            <h2>Comidas</h2>
+
+            <figure class="foto-seccion">
+                <img 
+                    src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=80" 
+                    alt="Tacos tradicionales mexicanos servidos con cilantro, cebolla y limones"
+                    onerror="this.src='https://placehold.co/900x300/f2efe9/59524b?text=Comida+Tradicional+Mexicana'"
+                >
+                <figcaption>Platillos preparados al momento con tortillas recién hechas.</figcaption>
+            </figure>
+
+            <ul class="lista-menu">
+                <li class="platillo">
+                    <h3>Tacos al Pastor</h3>
+                    <p>Tortilla de maíz hecha a mano con carne adobada al trompo, piña asada, cilantro, cebolla picada y salsa verde cruda.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Enchiladas Suizas</h3>
+                    <p>Rellenas de pechuga de pollo deshebrada, bañadas en salsa cremosa de tomatillo verde y gratinadas con queso manchego.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Mole Poblano con Pollo</h3>
+                    <p>Pieza de pollo bañada en mole tradicional de cacao, almendras y chiles secos, acompañada de arroz rojo y ajonjolí tostado.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Arrachera a la Parrilla</h3>
+                    <p>Corte marinado asado al carbón, servido con guacamole fresco, frijoles de la olla, cebollitas cambray y chiles toreados.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Chiles Rellenos de Queso</h3>
+                    <p>Chiles poblanos tatemados y capeados, rellenos de queso fresco de rancho y bañados en caldillo casero de jitomate.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ==================== SECCIÓN DE BEBIDAS ==================== -->
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+
+            <figure class="foto-seccion">
+                <img 
+                    src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=80" 
+                    alt="Jarras y vasos de aguas frescas naturales con frutas y hielo"
+                    onerror="this.src='https://placehold.co/900x300/f2efe9/59524b?text=Aguas+Frescas+y+Bebidas'"
+                >
+                <figcaption>Aguas frescas del día, jugos naturales y bebidas calientes sin alcohol.</figcaption>
+            </figure>
+
+            <ul class="lista-menu">
+                <li class="platillo">
+                    <h3>Agua de Horchata con Canela</h3>
+                    <p>Elaborada en casa con arroz remojado, leche, un toque de vainilla natural y canela molida.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Agua de Jamaica con Guayaba</h3>
+                    <p>Infusión natural de flor de jamaica mezclada con pulpa fresca de guayaba rosa.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Café de Olla</h3>
+                    <p>Café de grano infusionado en olla de barro con piloncillo, raja de canela y cáscara de naranja.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Chocolate Caliente Oaxaqueño</h3>
+                    <p>Tablilla de cacao molido con almendra y canela, batido con molinillo en leche entera.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Jugo Verde Natural</h3>
+                    <p>Jugo de naranja recién exprimido licuado con nopal tierno, piña, apio y perejil fresco.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ==================== SECCIÓN DE POSTRES ==================== -->
+        <section id="postres">
+            <h2>Postres</h2>
+
+            <figure class="foto-seccion">
+                <img 
+                    src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=900&q=80" 
+                    alt="Churros tradicionales espolvoreados con azúcar y canela"
+                    onerror="this.src='https://placehold.co/900x300/f2efe9/59524b?text=Postres+Caseros'"
+                >
+                <figcaption>Repostería y dulces tradicionales preparados diariamente en nuestra cocina.</figcaption>
+            </figure>
+
+            <ul class="lista-menu">
+                <li class="platillo">
+                    <h3>Flan Napolitano Casero</h3>
+                    <p>Flan horneado de textura suave con vainilla natural, bañado en caramelo dorado y nuez troceada.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Churros con Cajeta</h3>
+                    <p>Churros recién hechos espolvoreados con azúcar y canela, servidos con cajeta quemada tibia.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Pastel de Tres Leches</h3>
+                    <p>Bizcocho esponjoso humedecido en mezcla de tres leches, cubierto con crema batida y fresas frescas.</p>
+                </li>
+                <li class="platillo">
+                    <h3>Arroz con Leche</h3>
+                    <p>Cocido a fuego lento con leche entera, rama de canela, pasas y ralladura fina de limón.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <p><strong>Fonda La Palma</strong> · Abierto de lunes a domingo de 9:00 a 21:00 hrs.</p>
+            <p>Calle Palma Norte #114, Centro Histórico · Servicio familiar</p>
+        </footer>
+    </main>
+
+</body>
+</html>
